@@ -40,3 +40,28 @@ class Solution {
 Time Complexity : O(n)
 Space Complexity : O(1)
 
+Approach 3
+
+class Solution {
+    public static int removeDuplicates(int nums[]) {
+        int n = nums.length;
+        int i=0;
+        
+        if(n == 1) {
+            return 1;
+        }
+
+        for(int j=1; j<n; ) {
+            while(j < n && nums[i] == nums[j]) j++;
+            if (j < n) {
+                i++;
+                nums[i] = nums[j];
+            }
+        }
+        return i+1;
+    }
+}
+
+Time Complexity : O(n)
+Space Complexity : O(1
+)
