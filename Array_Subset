@@ -29,3 +29,30 @@ class Solution {
 Time Complexity : O(nlogn)
 Space Complexity : O(1
 )
+
+Approach 2
+
+class Solution {
+    public boolean isSubset(int a[], int b[]) {
+        HashMap<Integer, Integer> mapA = new HashMap<>();
+        for(int num : a) {
+             mapA.put(num, mapA.getOrDefault(num, 0) + 1);
+        }
+       
+        for(int num : b) {
+            if(!mapA.containsKey(num)) {
+                return false;
+            }
+            int count = mapA.get(num);
+            if (count == 0) {
+                return false;
+            }
+            mapA.put(num, count - 1);
+        }
+       
+        return true;
+    }
+}
+
+Time Complexity : O(n)
+Space Complexity : O(n)
