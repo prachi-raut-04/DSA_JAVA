@@ -11,6 +11,9 @@ class Solution {
     }
 }
 
+Time Complexiy : O(log n)
+Space Complexity : O(1)
+
 Approach 2
 
 class Solution {
