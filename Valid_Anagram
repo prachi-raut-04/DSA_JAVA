@@ -29,3 +29,28 @@ Time Complexity : O(n^2)
 Space Complexity : O(1)
 
 Optimized Approach 
+
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        if(s.length() != t.length()) {
+            return false;
+        }
+        int st[] = new int[26];
+
+        for(char ch : s.toCharArray()) {
+            st[ch - 'a']++;
+        }
+
+        for(char ch : t.toCharArray()) {
+            st[ch - 'a']--;
+        }
+
+        for(int i : st) {
+            if(i != 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
