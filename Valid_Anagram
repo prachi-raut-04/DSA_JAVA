@@ -1,4 +1,4 @@
-Brute Approach 1 
+Brute Approach 
 
 class Solution {
     public boolean isAnagram(String s, String t) {
@@ -28,4 +28,4 @@ class Solution {
 Time Complexity : O(n^2)
 Space Complexity : O(1)
 
-
+Optimized Approach 
