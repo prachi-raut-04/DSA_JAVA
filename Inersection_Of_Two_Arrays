@@ -1,4 +1,4 @@
-Approach 1 
+Approach 2
 
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
@@ -27,4 +27,5 @@ class Solution {
     }
 }
 
-Time 
+Time Complexity : O(n1 + n2)
+Space Complexity : O(min(n1, n2)
