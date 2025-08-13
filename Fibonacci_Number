@@ -49,3 +49,6 @@ class Solution {
         return b;
     }
 }
+
+Time Complexity : O(n)
+Space Complexity : O(1)
