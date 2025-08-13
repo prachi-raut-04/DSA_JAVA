@@ -12,3 +12,20 @@ class Solution {
 
 Time Compleixty : O(2^n)
 Space Complexity : O(n)
+
+Optimized Approach 1
+
+class Solution {
+    public int fib(int n) {
+        ArrayList<Integer> fab = new ArrayList<>();
+        fab.add(0);
+        fab.add(1);
+
+        for(int i=2; i<=n; i++) {
+            fab.add(fab.get(i-1) + fab.get(i-2));
+        }
+
+        return fab.get(n);
+    }
+}
+
