@@ -19,3 +19,20 @@ Time Complexity : O(n)
 Space Complexity : O(1)
 
 Approach 2 (Recursive approach)
+
+class Solution {
+
+    public void reverse(char[] s, int si, int ei) {
+        if(si >= ei) return;
+
+        char temp = s[si];
+        s[si] = s[ei];
+        s[ei] = temp;
+
+        reverse(s, si+1, ei-1);
+    }
+
+    public void reverseString(char[] s) {
+        reverse(s, 0, s.length-1);
+    }
+}
