@@ -12,3 +12,6 @@ class Solution {
         else return false;
     }
 }
+
+Time Complexity : O(log n)
+Space Complexity : O(1)
