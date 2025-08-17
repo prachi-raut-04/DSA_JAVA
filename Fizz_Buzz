@@ -20,4 +20,4 @@ class Solution {
     }
 }
 
-Time Compleixty : 
+Time Compleixty : O(n)
