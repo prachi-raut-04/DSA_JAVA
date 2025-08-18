@@ -33,3 +33,5 @@ class Solution {
         return xor;
     }
 }
+
+Time Complexity : O(n)
