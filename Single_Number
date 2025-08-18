@@ -19,4 +19,5 @@ class Solution {
     }
 }
 
-Time complexity : O(n^2)
+Time Complexity : O(n^2)
+Space Complexity : O(1)
