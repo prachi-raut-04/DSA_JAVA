@@ -26,4 +26,4 @@ class Solution {
     }
 }
 
-Time Complexity :
+Time Complexity : O(log n)
