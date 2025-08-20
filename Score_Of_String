@@ -8,4 +8,11 @@ class Solution {
         for(int i=0; i<n-1; i++) {
             if(i != n-1) {
                 sum += Math.abs(s.charAt(i) - s.charAt(i+1));
-            } 
+            } else {
+                sum += Math.abs(s.charAt(i) - s.charAt(0));
+            }
+        }
+
+        return sum;
+    }
+}
