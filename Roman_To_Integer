@@ -32,3 +32,19 @@ Time Complexity : O(n)
 Space Complexity : O(1)
 
 Approach 2
+
+class Solution {
+    public int getValue(char ch) {
+        if(ch == 'M') return 1000;
+        else if(ch == 'D') return 500;
+        else if(ch == 'C') return 100;
+        else if(ch == 'L') return 50;
+        else if(ch == 'X') return 10;
+        else if(ch == 'V') return 5;
+        else return 1;
+    }
+    public int romanToInt(String s) {
+        int sum = 0;
+        int n = s.length();
+
+        int prev = getValue(s.charAt(0));
