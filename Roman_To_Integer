@@ -63,3 +63,5 @@ class Solution {
         return sum + getValue(s.charAt(n-1));
     }
 }
+
+Time Complexity : 
