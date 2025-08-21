@@ -10,3 +10,20 @@ class Solution {
         value.put('C', 100);
         value.put('D', 500);
         value.put('M', 1000);
+
+        int sum = 0;
+        int n = s.length();
+
+        for (int i=0; i<n-1; i++) {
+            int curr = value.get(s.charAt(i));
+            int next = value.get(s.charAt(i+1));
+            if(curr >= next) {
+                sum += curr;
+            } else {
+                sum -= curr;
+            }
+        }
+
+        return sum + value.get(s.charAt(n-1));
+    }
+}
