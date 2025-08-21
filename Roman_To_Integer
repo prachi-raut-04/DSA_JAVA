@@ -27,3 +27,5 @@ class Solution {
         return sum + value.get(s.charAt(n-1));
     }
 }
+
+Time Complexity : 
