@@ -6,6 +6,32 @@ class Solution {
 
         if(strs.length == 1) return strs[0];
         
+        Arrays.sort(strs);
+
+        String st = strs[0];
+        String en = strs[strs.length - 1];
+        int minLen = (st.length() > en.length()) ? en.length() : st.length();
+        int i = 0;
+
+        while(minLen > i && st.charAt(i) == en.charAt(i)) {
+            i++;
+        }
+
+        return st.substring(0, i);
+    }
+}
+
+Time Complexity : O(nlogn)
+Space Complexity : O(1)
+
+Approach 2 
+
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        if(strs.length == 0) return "";
+
+        if(strs.length == 1) return strs[0];
+        
         String prev = strs[0];
 
         for(int i=1; i<strs.length; i++) {
@@ -18,9 +44,3 @@ class Solution {
         return prev;
     }
 }
-
-Time Complexity : O(nlogn)
-Space Complexity : O(1)
-
-Approach 2 
-
