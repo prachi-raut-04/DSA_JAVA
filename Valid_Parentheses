@@ -1,2 +1,25 @@
-Approach 1 
+Approach 2
 
+class Solution {
+    public boolean isValid(String s) {
+        if(s.length() % 2 != 0) {
+            return false;
+        }
+
+        char st[] = new char[s.length()];
+        int top = -1;
+        for(char c : s.toCharArray()) {
+            if(c == '(') {
+                st[++top] = ')';
+            } else if(c == '{') {
+                st[++top] = '}';
+            } else if(c == '[') {
+                st[++top] = ']';
+            } else if(top == -1 || st[top--] != c) {
+                return false;
+            } 
+        }
+
+        return top == -1;
+    }
+}
