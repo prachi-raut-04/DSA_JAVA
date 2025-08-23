@@ -28,6 +28,8 @@ class Solution {
     }
 }
 
+Time Complexity : O(n)
+
 Approach 2
 
 class Solution {
