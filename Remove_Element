@@ -5,3 +5,15 @@ class Solution {
         int s = 0;
         int e = nums.length-1;
 
+        while(s <= e) {
+            if(nums[s] == val) {
+                nums[s] = nums[e];
+                e--;
+            } else {
+                s++;
+            }
+        }
+
+        return s;
+    }
+}
