@@ -1,3 +1,7 @@
 Code 
 
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int s = 0;
+        int e = nums.length-1;
 
