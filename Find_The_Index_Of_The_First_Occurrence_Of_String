@@ -1,1 +1,26 @@
 Code 
+
+class Solution {
+    public int strStr(String h, String ne) {
+        int n = h.length();
+        int m = ne.length();
+        int i=0;
+        int j=0;
+
+        while(i <= n-m) {
+            int st = i;
+            while(j < m && h.charAt(i) == ne.charAt(j)) {
+                j++;
+                i++;
+            }
+            if(j == m) {
+                return st;
+            } else {
+                j = 0;
+            }
+            i = st + 1;
+        }
+
+        return -1;
+    }
+}
