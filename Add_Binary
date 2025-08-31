@@ -21,4 +21,4 @@ class Solution {
     }
 }
 
-Time Complexity : O(max(m,n)
+Time Complexity : O(max(n,m))
