@@ -21,6 +21,5 @@ class Solution {
     }
 }
 
-Time Complexity : O(max(n,m))
-Space Complexiy : 
-
+Time Complexity : O(max(n, m))
+Space Complexiy : O(max(n, m))
