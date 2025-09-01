@@ -8,4 +8,4 @@ class Solution {
 }
 
 Time Complexity : O(2^n)
-Space Complexity : 
+Space Complexity : O(n)
