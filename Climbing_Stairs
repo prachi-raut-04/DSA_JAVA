@@ -12,3 +12,21 @@ Space Complexity : O(n)
 
 Approach 2 (Optimezed Time Complexity) 
 
+class Solution {
+    public int climbRec(int n, Map<Integer, Integer> memo) {
+        if(n == 0 || n == 1) {
+            memo.put(n, 1);
+            return 1;
+        }
+        if(memo.containsKey(n)) {
+            return memo.get(n);
+        }
+        int climbVal = climbRec(n-1, memo) + climbRec(n-2, memo);
+        memo.put(n, climbVal);
+        return climbVal;
+    }
+    public int climbStairs(int n) {
+        Map<Integer, Integer> memo = new HashMap<>();
+        return climbRec(n, memo);
+    }
+}
