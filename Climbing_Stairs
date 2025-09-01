@@ -9,3 +9,6 @@ class Solution {
 
 Time Complexity : O(2^n)
 Space Complexity : O(n)
+
+Approach 2 (Optimezed Time Complexity) 
+
