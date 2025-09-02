@@ -23,3 +23,20 @@ Time Complexity : O(n)
 Space Complexity : O(1)
 
 Approach 2
+
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        ListNode temp = head;
+
+        while(temp != null && temp.next != null) {
+            ListNode nextNode = temp.next;
+            while(nextNode != null && temp.val == nextNode.val) {
+                nextNode = nextNode.next;
+            }
+            temp.next = nextNode;
+            temp = temp.next;
+        }
+
+        return head;
+    }
+}
