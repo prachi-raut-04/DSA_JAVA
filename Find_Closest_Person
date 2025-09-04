@@ -17,3 +17,18 @@ Time Complexity : O(1)
 Space Complexity : O(1)
 
 Code 2 
+
+class Solution {
+    public int findClosest(int x, int y, int z) {
+        int disX = Math.abs(z - x);
+        int disY = Math.abs(z - y);
+
+        if(disX == disY) {
+            return 0;
+        } else if(disX < disY) {
+            return 1;
+        } else {
+            return 2;
+        }
+    }
+}
