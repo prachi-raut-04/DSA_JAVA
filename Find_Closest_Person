@@ -12,3 +12,5 @@ class Solution {
         return (disX < disY) ? 1 : 2;
     }
 }
+
+Time Complexity : 
