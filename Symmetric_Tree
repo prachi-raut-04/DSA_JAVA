@@ -11,3 +11,5 @@ class Solution {
         return symmentric(root.left, root.right);
     }
 }
+
+Time Complexity : 
