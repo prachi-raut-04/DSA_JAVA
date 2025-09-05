@@ -1,1 +1,16 @@
 Code 
+
+class Solution {
+
+    public boolean symmentric(TreeNode l, TreeNode r) {
+        if(l == null && r == null) return true;
+        
+        if(l == null || r == null || l.val != r.val) return false;
+
+        return symmentric(l.left, r.right) && symmentric(l.right, r.left);
+    }
+
+    public boolean isSymmetric(TreeNode root) {
+        return symmentric(root.left, root.right);
+    }
+}
