@@ -10,4 +10,4 @@ class Solution {
     }
 }
 
-Time complexity : 
+Time complexity : O(n)
