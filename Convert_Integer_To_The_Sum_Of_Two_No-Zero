@@ -1,1 +1,21 @@
 Code 
+
+class Solution {
+
+    public boolean isZero(int n) {
+        while(n > 0) {
+            if(n % 10 == 0) return true;
+            n = n / 10;
+        }
+        return false;
+    }
+
+    public int[] getNoZeroIntegers(int n) {
+        for(int i=1; i<n; i++) {
+            if(!isZero(i) && !isZero(n-i)) {
+                return new int[]{i, n-i};
+            }
+        }
+        return new int[]{};
+    }
+}
