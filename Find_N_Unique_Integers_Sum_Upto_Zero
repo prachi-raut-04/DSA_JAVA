@@ -17,6 +17,21 @@ class Solution {
 }
 
 Time Complexity : O(n)
-Space Complexity : O(n)
+Space Complexity : O(1)
 
 Code 2 
+
+class Solution {
+    public int[] sumZero(int n) {
+        int[] res = new int[n];
+        int sum = 0;
+
+        for(int i=1; i<n; i++) {
+            res[i] = i;
+            sum += i;
+        }
+
+        res[0] = -sum;
+        return res;
+    }
+}
