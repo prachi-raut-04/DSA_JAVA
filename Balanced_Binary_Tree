@@ -26,3 +26,23 @@ Time Complexity : O(n^2)
 Space Complexity : O(h)
 
 Approach 2
+
+class Solution {
+    public int balanced(TreeNode root) {
+        if(root == null) return 0;
+        
+        int lMax =  balanced(root.left);
+        if(lMax == -1) return -1;
+
+        int rMax = balanced(root.right);
+        if(rMax == -1) return -1;
+
+        if(Math.abs(lMax-rMax) > 1) return -1;
+
+        return Math.max(lMax, rMax) + 1;
+    }
+
+    public boolean isBalanced(TreeNode root) {
+        return balanced(root) != -1;
+    }
+}
