@@ -21,3 +21,5 @@ class Solution {
         return isBalanced(root.left) && isBalanced(root.right);
     }
 }
+
+Time Complexity : O(n^2)
