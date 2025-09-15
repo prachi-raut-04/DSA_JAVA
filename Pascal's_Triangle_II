@@ -18,4 +18,4 @@ class Solution {
 }
 
 Time Complexity : O(r)
-Space Complexity : 
+Space Complexity : O(1)
