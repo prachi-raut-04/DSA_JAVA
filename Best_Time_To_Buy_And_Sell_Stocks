@@ -15,6 +15,6 @@ class Solution {
     }
 }
 
-Time Complexity 
+Time Complexity : O(n^2)
 
 Approach 2 (Optimized approach)
