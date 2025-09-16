@@ -19,3 +19,21 @@ Time Complexity : O(n^2)
 Space Complexity : O(1)
 
 Approach 2 (Optimized approach)
+
+class Solution {
+    public int maxProfit(int[] p) {
+        int profit = 0;
+        int bp = Integer.MAX_VALUE;
+
+        for(int prices : p) {
+            if(bp > prices) {
+                bp = prices;
+            }
+            
+            profit = Math.max(profit, prices - bp);
+            
+        }
+
+        return profit;
+    }
+}
