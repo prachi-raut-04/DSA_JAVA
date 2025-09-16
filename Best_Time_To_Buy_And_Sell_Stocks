@@ -16,6 +16,6 @@ class Solution {
 }
 
 Time Complexity : O(n^2)
+Space Complexity : 
 
-s
 Approach 2 (Optimized approach)
