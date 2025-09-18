@@ -44,7 +44,7 @@ public class Solution {
     }
 }
 
-Time Compelxity : O(n+m)
+Time Compelxity : O(m+n)
 Space complexity : O(1)
 
 Approach 2
