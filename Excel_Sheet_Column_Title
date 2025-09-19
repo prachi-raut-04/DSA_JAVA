@@ -17,4 +17,4 @@ class Solution {
 }
 
 Time Complexity : O(log c)
-Space Complexity : O()
+Space Complexity : O(log c)
