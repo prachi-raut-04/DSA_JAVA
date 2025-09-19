@@ -1,1 +1,17 @@
 Code 
+
+class Solution {
+    public String convertToTitle(int c) {
+        String alpha[] = {"Z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y"};
+        StringBuilder ans = new StringBuilder("");
+
+        while(c > 0) {
+            int lD = c % 26;
+            ans.append(alpha[lD]);
+            if(lD == 0) c--;
+            c = c / 26;
+        }
+
+        return ans.reverse().toString();
+    }
+}
