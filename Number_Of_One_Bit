@@ -33,4 +33,4 @@ class Solution {
     }
 }
 
-Time Complexity : O
+Time Complexity : O(log n)
