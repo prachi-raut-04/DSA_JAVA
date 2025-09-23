@@ -34,4 +34,4 @@ class Solution {
 }
 
 Time Complexity : O(log n)
-Space Compelxity : O()
+Space Compelxity : O(1)
