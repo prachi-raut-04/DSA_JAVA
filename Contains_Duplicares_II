@@ -18,5 +18,5 @@ class Solution {
     }
 }
 
-Time Complexity : O()
+Time Complexity : O(n * k)
 Space Complexity : O()
