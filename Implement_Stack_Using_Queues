@@ -38,7 +38,7 @@ class MyStack {
 }
 
 Time Complexity 
-Push 
+Push : O()
 Pop
 Top
 Empty
