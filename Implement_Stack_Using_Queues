@@ -40,4 +40,5 @@ class MyStack {
 Time Complexity 
 Push 
 Pop
-Peek
+Top
+Empty
