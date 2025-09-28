@@ -43,4 +43,4 @@ Pop : O(1)
 Top : O(1)
 Empty : O(1)
 
-Space Complexity : O()
+Space Complexity : O(1)
