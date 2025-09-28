@@ -37,6 +37,7 @@ class MyStack {
     }
 }
 
-Time Complexity : 
+Time Complexity 
 Push 
 Pop
+Peek
