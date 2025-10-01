@@ -1,1 +1,16 @@
 Code 
+
+class Solution {
+    public int numWaterBottles(int b, int e) {
+        int res = b;
+
+        while(b >= e) {
+            int div = b / e;
+            int mod = b % e;
+            b = div + mod;
+            res += div;
+        }
+
+        return res;
+    }
+}
