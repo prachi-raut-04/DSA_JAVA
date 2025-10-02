@@ -24,4 +24,9 @@ class MyQueue {
             st.push(hSt.pop());
         }
     }
-    
+
+    public int pop() {
+        if(st.isEmpty()) return -1;
+
+        return st.pop();
+    }
