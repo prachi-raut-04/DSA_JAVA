@@ -1,1 +1,18 @@
 Code 
+
+class Solution {
+    public int maxBottlesDrunk(int numBottles, int numExchange) {
+        int drunk = numBottles;  // drink all starting bottles
+        int empty = numBottles;
+
+        while (empty >= numExchange) {
+            // perform exactly one exchange per step
+            empty -= numExchange;   // spend numExchange empty bottles
+            drunk += 1;             // drink the new bottle
+            empty += 1;             // that new bottle becomes empty
+            numExchange++;          // cost increases for next exchange
+        }
+
+        return drunk;
+    }
+}
