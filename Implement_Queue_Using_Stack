@@ -41,3 +41,9 @@ class MyQueue {
         return st.size() == 0;
     }
 }
+
+Time Complexity 
+push : 
+pop :
+Peek : 
+empty : 
