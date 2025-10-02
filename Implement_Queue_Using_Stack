@@ -47,3 +47,5 @@ push :
 pop :
 Peek : 
 empty : 
+
+Space Complexity 
