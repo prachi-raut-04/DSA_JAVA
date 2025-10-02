@@ -45,7 +45,7 @@ class MyQueue {
 Time Complexity 
 push : 
 pop :
-Peek : 
+Peek : O()
 empty : 
 
 Space Complexity : O(1)
