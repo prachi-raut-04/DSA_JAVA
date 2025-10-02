@@ -46,6 +46,6 @@ Time Complexity
 push : O(n)
 pop : O(1)
 Peek : O(1)
-empty : O()
+empty : O(1)
 
 Space Complexity : O(1)
