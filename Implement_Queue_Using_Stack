@@ -36,3 +36,8 @@ class MyQueue {
     
         return st.peek();
     }
+ 
+    public boolean empty() {
+        return st.size() == 0;
+    }
+}
