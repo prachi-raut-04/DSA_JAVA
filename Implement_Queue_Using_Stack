@@ -43,7 +43,7 @@ class MyQueue {
 }
 
 Time Complexity 
-push : O()
+push : O(n)
 pop : O()
 Peek : O()
 empty : O()
