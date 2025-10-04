@@ -1,1 +1,22 @@
 Code 1
+
+class Solution {
+    public int maxArea(int[] ht) {
+        int lp = 0;
+        int rp = ht.length - 1;
+        int max = 0;
+
+        while(lp < rp) {
+            int h = (ht[lp] < ht[rp]) ? ht[lp] : ht[rp];    
+            int w = rp - lp;
+            int trapWater = h * w;
+            max = (max < trapWater) ? trapWater : max;
+            if(ht[lp] < ht[rp]) {
+                lp++;
+            } else {
+                rp--;
+            }
+        }
+        return max;
+    }
+}
