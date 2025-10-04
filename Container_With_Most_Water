@@ -25,3 +25,24 @@ Time Complexity : O(n)
 Space Complexity : O(1)
 
 Code 2 
+
+class Solution {
+    public int maxArea(int[] ht) {
+        int lp = 0;
+        int rp = ht.length - 1;
+        int max = 0;
+
+        while(lp < rp) {
+            int h = (ht[lp] < ht[rp]) ? ht[lp] : ht[rp];    
+            int trapWater = h * (rp - lp);
+            max = (max < trapWater) ? trapWater : max;
+            while(lp < rp && ht[lp] <= h) {
+                lp++;
+            }
+            while(lp < rp && ht[rp] <= h) {
+                rp--;
+            }
+        }
+        return max;
+    }
+}
