@@ -28,4 +28,4 @@ class Solution {
 
 Time Complexity  
 Balanced Tree : O(n log n)
-Skewed Tree : 
+Skewed Tree : O(n ^ 2)
