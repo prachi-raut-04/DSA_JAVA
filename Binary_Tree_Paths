@@ -27,4 +27,4 @@ class Solution {
 }
 
 Time Complexity  
-Balanced Tree 
+Balanced Tree : O(n log n)
