@@ -31,5 +31,5 @@ Balanced Tree : O(n log n)
 Skewed Tree : O(n ^ 2)
 
 Space Complexity 
-Balanced Tree : O(H)
-Skewed Tree : O()
+Balanced Tree : O()
+Skewed Tree : O(log n)
