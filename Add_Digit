@@ -27,3 +27,5 @@ class Solution {
         else return n % 9;
     }
 }
+
+Time Complexity : 
