@@ -38,3 +38,5 @@ class Bank {
         return  account <= n;
     }
 }
+
+Time Complexity : 
