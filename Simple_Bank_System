@@ -39,5 +39,5 @@ class Bank {
     }
 }
 
-Time Complexity : 
+Time Complexity : O()
 Space Complexity : O(n)
