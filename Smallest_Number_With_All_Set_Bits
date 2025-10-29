@@ -1,1 +1,18 @@
 Code 1
+
+class Solution {
+    public int smallestNumber(int n) {
+        int ans = 0;
+        
+        for(int i=0; n>0; i++) {
+            ans += power(i);
+            n = n >> 1;
+        }
+
+        return ans;
+    }
+
+    private int power(int i) {
+        return 1 << i;
+    }
+}
