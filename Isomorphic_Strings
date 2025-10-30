@@ -1,1 +1,23 @@
+Code 
 
+class Solution {
+    public boolean isIsomorphic(String s, String t) {
+        int mapST[] = new int[128];
+        int mapTS[] = new int[128];
+
+        for(int i=0; i<s.length(); i++) {
+            char sc = s.charAt(i);
+            char tc = t.charAt(i);
+
+            if(mapST[sc] == 0 && mapTS[tc] == 0) {
+                mapST[sc] = tc;
+                mapTS[tc] = sc;
+            } 
+            else if(mapST[sc] != tc || mapTS[tc] != sc) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
