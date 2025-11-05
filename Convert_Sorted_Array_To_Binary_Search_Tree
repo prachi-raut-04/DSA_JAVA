@@ -17,3 +17,5 @@ class Solution {
         return bst(nums, 0, nums.length-1);
     }
 }
+
+Time Complexity : 
