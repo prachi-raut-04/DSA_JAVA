@@ -20,4 +20,4 @@ class NumArray {
     }
 }
 
-Overall Time Complexity : 
+Overall Time Complexity : O()
