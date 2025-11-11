@@ -17,5 +17,5 @@ class Solution {
     }
 }
 
-Time Complexity : 
+Time Complexity : O(max(num1, num2))
 Space Complexity : 
