@@ -40,5 +40,5 @@ class Solution {
     }
 }
 
-Time Complexity : O()
+Time Complexity : O(min(num1, num2)
 Space Complexity : O()
