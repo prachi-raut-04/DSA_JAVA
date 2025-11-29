@@ -11,3 +11,5 @@ class Solution {
         return sum % k;
     }
 }
+
+Space 
