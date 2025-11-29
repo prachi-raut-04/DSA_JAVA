@@ -12,4 +12,5 @@ class Solution {
     }
 }
 
-Space 
+Time Complexity : O(n)
+Space Complexity : O(1)
