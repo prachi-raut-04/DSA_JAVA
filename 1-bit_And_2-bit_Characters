@@ -16,7 +16,7 @@ class Solution {
 }
 
 Time Complexity : O(n)
-Space Compelxity : O()
+Space Compelxity : O(1)
 
 Code 2 
 
