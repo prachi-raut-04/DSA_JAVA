@@ -20,5 +20,22 @@ Space Compelxity : O()
 
 Code 2 
 
+class Solution {
+    public boolean isOneBitCharacter(int[] bits) {
+        boolean isOne = false;
+
+        for(int i=0; i<bits.length; i++) {
+            if(bits[i] == 1) {
+                isOne = true;
+                i++;
+            } else {
+                isOne = false;
+            }
+        }
+
+        return !isOne;
+    }
+}
+
 Time Complexity : O()
 Space Complexity : O()
