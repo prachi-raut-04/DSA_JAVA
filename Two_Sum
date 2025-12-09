@@ -18,6 +18,8 @@ class Solution {
 Time complexity : O(n²)
 Space Complexity : O(1)
 
+// Using Binary Search Approach
+
 // Optimized apporach 
 
 class Solution {
