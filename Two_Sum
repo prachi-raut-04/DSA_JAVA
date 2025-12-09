@@ -20,7 +20,7 @@ Space Complexity : O(1)
 
 // Using Binary Search Approach
 
-// Optimized apporach 
+// Optimized Apporach 
 
 class Solution {
     public static int[] twoSum(int[] nums, int target) {
